@@ -112,8 +112,8 @@ def geracao_texto(mensagens):
 
 if __name__ == '__main__':
     print('Bem-vindo ao ChatBot Finance')
-    
+    mensagens = []
     while True:
         input_usuario = input('User: ')
-        mensagens = [{'role':'user','content':input_usuario}]
+        mensagens.append({'role':'user','content':input_usuario})
         mensagens = geracao_texto(mensagens)
